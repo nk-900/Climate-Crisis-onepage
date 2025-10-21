@@ -1,16 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CO2 Absorption</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<input type="checkbox" id="menu-toggle" aria-hidden="true">
-
+<input type="checkbox" id="menu-toggle" aria-hidden="true" />
 
 <header class="site-header">
     <h1 class="brand">Climate Crisis Group Project</h1>
@@ -22,38 +21,102 @@
     </nav>
 </header>
 
-<section class="hero">
-    <h2>"Massive carbon dioxide absorption technology using ceramic powder"</h2>
-    <p>
-        "The ceramic powder made with this technology can absorb carbon dioxide, which is present in the atmosphere at only 400 ppm, simply by coming into contact with the air at room temperature.
-        The absorbed carbon dioxide can be separated and recovered by heating, and the ceramic powder after separation and recovery can repeatedly absorb carbon dioxide.
-        Because it is a solid, it will not volatilize or decrease even when exposed to the atmosphere for long periods of time.
-        It is a safe and secure material as it is composed of elements that are harmless to the human body."
-    </p>
-    <img src="assets/example.jpg" alt="Example image">
+<section class="hero section-pad">
+    <div class="hero-inner shell">
+        <h2>COF-999: The Next Step in Carbon Capture</h2>
+        <p>
+            COF-999 is a bright yellow powder developed at UC Berkeley that absorbs carbon dioxide from the air through microscopic pores.
+            Half a pound of COF-999 can remove as much CO₂ as a tree and can be reused multiple times.
+            “It performs beautifully,” Omar Yaghi a reticular chemist at UC Berkeley.
+            Researchers believe it can make large-scale carbon capture faster and more affordable.
+        </p>
+        <img src="assets/img.png" alt="Example image" />
+    </div>
 </section>
 
-<section class="about">
-    <h3>Overview</h3>
-    <p>
-        This technology can be used to capture carbon dioxide from the air in factories or other facilities.
-        It’s easy to reuse and helps reduce greenhouse gas emissions.
-    </p>
-    <p>
-        The next step is to make the material even more efficient and to use it on a larger scale to support a cleaner environment.
-    </p>
+<section class="slider section-pad">
+    <input type="radio" name="slide" id="s1" checked />
+    <input type="radio" name="slide" id="s2" />
+    <input type="radio" name="slide" id="s3" />
+    <input type="radio" name="slide" id="s4" />
+
+    <div class="frame shell">
+        <article class="slide">
+            <h4>Capture</h4>
+            <p>     </p>
+        </article>
+
+        <article class="slide">
+            <h4>Release</h4>
+            <p>     </p>
+        </article>
+
+        <article class="slide">
+            <h4>Reuse</h4>
+            <p>     </p>
+        </article>
+
+        <article class="slide">
+            <h4>Scale</h4>
+            <p>     </p>
+        </article>
+
+        <div class="controls">
+            <label class="btn prev to-s4" for="s4" aria-label="Previous">‹</label>
+            <label class="btn next to-s2" for="s2" aria-label="Next">›</label>
+
+            <label class="btn prev to-s1" for="s1" aria-label="Previous">‹</label>
+            <label class="btn next to-s3" for="s3" aria-label="Next">›</label>
+
+            <label class="btn prev to-s2" for="s2" aria-label="Previous">‹</label>
+            <label class="btn next to-s4" for="s4" aria-label="Next">›</label>
+
+            <label class="btn prev to-s3" for="s3" aria-label="Previous">‹</label>
+            <label class="btn next to-s1" for="s1" aria-label="Next">›</label>
+        </div>
+    </div>
+
+    <div class="dots shell">
+        <label for="s1" aria-label="Slide 1"></label>
+        <label for="s2" aria-label="Slide 2"></label>
+        <label for="s3" aria-label="Slide 3"></label>
+        <label for="s4" aria-label="Slide 4"></label>
+    </div>
 </section>
 
-
-<section class="about">
-    <h3>Citations:</h3>
-    <p>
-        <a href="https://mirainotane.sumitomoexpo.com/en/tech/detail/?id=114007/">Sumitomo Expo - Massive carbon dioxide absorption technology using ceramic powder</a>
-    </p>
+<section class="about section-pad">
+    <div class="shell card">
+        <h3>Overview</h3>
+        <p>
+            This technology can be used to capture carbon dioxide from the air in factories or other facilities.
+            It’s easy to reuse and helps reduce greenhouse gas emissions.
+        </p>
+        <p>
+            The next step is to make the material even more efficient and to use it on a larger scale to support a cleaner environment.
+        </p>
+    </div>
 </section>
 
-<footer>
-    <p>&copy; Group Project</p>
+<section class="about section-pad">
+    <div class="shell card">
+        <h3>Citations:</h3>
+        <p>
+            <a href="https://mirainotane.sumitomoexpo.com/en/tech/detail/?id=114007/">
+                Sumitomo Expo - Massive carbon dioxide absorption technology using ceramic powder
+            </a>
+        </p>
+        <p>
+            <a href="https://www.latimes.com/environment/story/2024-10-23/this-powder-can-remove-as-much-co2-from-the-air-as-a-tree">
+                Los Angeles Times - Half a pound of this powder can remove as much CO₂ from the air as a tree, scientists say
+            </a>
+        </p>
+    </div>
+</section>
+
+<footer class="section-pad">
+    <div class="shell">
+        <p>&copy; Group Project</p>
+    </div>
 </footer>
 
 </body>
