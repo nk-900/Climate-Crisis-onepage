@@ -167,6 +167,24 @@ body {
 footer{ background:var(--steel); color:#fff; }
 footer .shell{ padding: 16px 0; }
 
+/* --- Card Stacking Styles That I'm pasting from 
+       my personal project--- */
+
+.stacking-container {
+  position: relative;
+}
+
+.stacking-container > .hero {
+  position: -webkit-sticky; /* For Safari compatibility */
+  position: sticky;
+  
+  top: 70px;
+}
+
+.stack-end-spacer {
+  height: 10vh; 
+}
+
 @media (max-width: 600px) {
     .menu-icon {
         display: block; /* show hamburger */
