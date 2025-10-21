@@ -180,7 +180,6 @@ footer .shell{ padding: 16px 0; }
 }
 
 .stacking-container > .hero {
-  position: -webkit-sticky; /* For Safari compatibility */
   position: sticky;
 }
 
