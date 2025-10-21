@@ -8,6 +8,12 @@
 *{box-sizing:border-box}
 html,body{margin:0}
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;   /* stop horizontal pan/“zoomed-out” look */
+    touch-action: manipulation; /* reduces double-tap zoom on iOS */
+}
+
 body {
     margin: 0;
     font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
