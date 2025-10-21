@@ -1,5 +1,5 @@
 :root{
-    --coral:#E63946; --off:#F1FAEE; --teal:#A8DADC; --steel:#457B9D; --navy:#1D3557;
+    --coral:#E63946; --off:#C9D9C3; --teal:#A8DADC; --steel:#9ea99f; --softgreen:#84a877;
     --ink:#1f2937; --radius:14px;
     --shadow:0 6px 18px rgba(0,0,0,.12);
     --soft:0 3px 10px rgba(0,0,0,.08);
@@ -18,7 +18,7 @@ body {
 
 .section-pad{ padding: 20px 16px; }
 .shell{ max-width: 1000px; margin: 0 auto; }
-.card{ background:#fff; border-radius:var(--radius); box-shadow:var(--soft); padding:24px; }
+.card{ background:#F5F3ED; border-radius:var(--radius); box-shadow:var(--soft); padding:24px; }
 
 #menu-toggle {
     position: absolute;
@@ -33,7 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 12px 18px;
-    background:var(--navy);
+    background:var(--softgreen);
     color:#fff;
     box-shadow:var(--soft);
 }
@@ -66,8 +66,38 @@ body {
     background:rgba(255,255,255,.15);
 }
 
+.hero-main {
+    position: relative;
+    padding: 100px 16px;
+    color: #fff;
+    text-align: center;
+    background-image: url('assets/SumitomoEXPO.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-main::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-main .hero-inner {
+    background: none;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-main h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
 .hero-inner{
-    background:#fff; border:2px solid var(--teal);
+    background:#F5F3ED; border:2px solid var(--teal);
     border-radius:var(--radius); box-shadow:var(--soft);
     padding: 28px 24px;
     text-align:center;
@@ -90,11 +120,12 @@ body {
 .slide{
     position:absolute; inset:0;
     display:flex; flex-direction:column; justify-content:center; align-items:center;
-    background:#fff; color:var(--ink);
+    background:#F5F3ED; color:var(--ink);
     border-top:4px solid var(--steel);
     opacity:0; transition: opacity .45s ease;
-    padding: 24px;
+    padding: 24px 70px;
     border-radius: inherit;
+    text-align: center;
 }
 
 #s1:checked ~ .frame .slide:nth-child(1),
@@ -148,7 +179,7 @@ footer .shell{ padding: 16px 0; }
         left: 0;
         right: 0;
         top: 100%;
-        background:var(--navy);
+        background:var(--softgreen);
         padding:10px 0 10px 16px;
         gap:0;
         box-shadow:var(--soft);
