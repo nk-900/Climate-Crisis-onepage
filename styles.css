@@ -9,9 +9,7 @@
 html,body{margin:0}
 
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;   /* stop horizontal pan/“zoomed-out” look */
-    touch-action: manipulation; /* reduces double-tap zoom on iOS */
+    touch-action: manipulation;
 }
 
 body {
@@ -183,8 +181,6 @@ footer .shell{ padding: 16px 0; }
 .stacking-container > .hero {
   position: -webkit-sticky; /* For Safari compatibility */
   position: sticky;
-  
-  top: 70px;
 }
 
 .stack-end-spacer {
