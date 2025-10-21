@@ -96,6 +96,7 @@ body {
     padding: 24px;
     border-radius: inherit;
 }
+
 #s1:checked ~ .frame .slide:nth-child(1),
 #s2:checked ~ .frame .slide:nth-child(2),
 #s3:checked ~ .frame .slide:nth-child(3),
