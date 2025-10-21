@@ -84,6 +84,7 @@ body {
     height: 280px;
     background:#fff; border-radius:var(--radius); box-shadow:var(--shadow);
     padding: 0;
+    overflow: hidden;
 }
 
 .slide{
@@ -93,6 +94,7 @@ body {
     border-top:4px solid var(--steel);
     opacity:0; transition: opacity .45s ease;
     padding: 24px;
+    border-radius: inherit;
 }
 #s1:checked ~ .frame .slide:nth-child(1),
 #s2:checked ~ .frame .slide:nth-child(2),
@@ -146,7 +148,7 @@ footer .shell{ padding: 16px 0; }
         right: 0;
         top: 100%;
         background:var(--navy);
-        padding:10px 0;
+        padding:10px 0 10px 16px;
         gap:0;
         box-shadow:var(--soft);
     }
